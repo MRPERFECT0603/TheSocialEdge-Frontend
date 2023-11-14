@@ -29,11 +29,12 @@ jobs:
       - name: Build Docker Image
         run: sudo docker build -t app .
         
+      - name: Log in to Docker Hub
+        run:  docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
       - name: Tag Docker Image
         run: docker tag app vivekshaurya/thesocialedge-front
         
-      - name: Log in to Docker Hub
-        run:  docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker Image
         run: sudo docker push vivekshaurya/thesocialedge-front

@@ -37,4 +37,4 @@ jobs:
         
 
       - name: Push Docker Image
-        run: sudo docker push vivekshaurya/thesocialedge-front
+        run: docker push vivekshaurya/thesocialedge-front

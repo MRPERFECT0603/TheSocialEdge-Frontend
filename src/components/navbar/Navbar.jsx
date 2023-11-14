@@ -10,7 +10,7 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkmModeContext"
-import { AuthContext } from "../../context/authContext"; 
+import { AuthContext } from "../../context/authContext";
 
 const Navbar = () => {
 
@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="left">
                 <Link to="/" style={{ textDecoration: "none" }}>
-                    <span>TheSocialEdge</span>
+                    <span>VivekShaurya</span>
                 </Link>
                 <HomeOutlinedIcon />
                 {darkMode ? (

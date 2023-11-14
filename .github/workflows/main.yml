@@ -30,10 +30,10 @@ jobs:
         run: sudo docker build -t app .
         
       - name: Tag Docker Image
-        run: sudo docker tag app vivekshaurya/thesocialedge-front:latest
+        run: docker tag app vivekshaurya/thesocialedge-front
         
       - name: Log in to Docker Hub
         run:  docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_SECRET }}
 
       - name: Push Docker Image
-        run: sudo docker push vivekshaurya/thesocialedge-front:latest
+        run: sudo docker push vivekshaurya/thesocialedge-front

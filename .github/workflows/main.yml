@@ -33,7 +33,7 @@ jobs:
         run: sudo docker tag app vivekshaurya/thesocialedge-front:latest
         
       - name: Log in to Docker Hub
-        run:  docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+        run:  docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_SECRET }}
 
       - name: Push Docker Image
         run: sudo docker push vivekshaurya/thesocialedge-front:latest

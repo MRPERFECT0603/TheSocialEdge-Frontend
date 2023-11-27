@@ -12,19 +12,30 @@ import Messages from "../../assets/10.png";
 import Tutorials from "../../assets/11.png";
 import Courses from "../../assets/12.png";
 import Fund from "../../assets/13.png";
-import { AuthContext } from "../../context/authContext"; 
-import { useContext } from "react";
+import { AuthContext } from "../../context/authContext";
+import { useContext, useState, useEffect } from "react";
 
 const Leftbar = () => {
 
     const { currentUser } = useContext(AuthContext);
+    // console.log(currentUser);
+    const [currUser, setCurrUser] = useState(currentUser);
+    useEffect(() => {
+        // const { currentUser } = useContext(AuthContext);
+        // setCurrUser(currentUser);
+        setCurrUser({...currentUser},currentUser);
+        console.log(currentUser);
+
+    }, [currentUser])
+
+    //console.log(currUser);
     return (
         <div className="leftbar">
             <div className="container">
                 <div className="menu">
                     <div className="user">
-                        <img src={"/uploads/"+currentUser.profilePic} alt="" />
-                        <span>{currentUser.name}</span>
+                        <img src={"/uploads/" + currUser.profilePic} alt="" />
+                        <span>{currUser.name}</span>
                     </div>
                     <div className="item">
                         <img src={Friends} alt="" />
@@ -46,7 +57,7 @@ const Leftbar = () => {
                         <img src={Memories} alt="" />
                         <span>Memories</span>
                     </div>
-                </div>    
+                </div>
                 <hr />
                 <div className="menu">
                     <span>Your shortcuts</span>

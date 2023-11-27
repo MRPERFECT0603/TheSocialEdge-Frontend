@@ -10,8 +10,7 @@ import { useContext } from "react";
 import { DarkModeContext } from "./context/darkmModeContext";
 import { AuthContext } from "./context/authContext";
 import {createBrowserRouter, Outlet, RouterProvider, BrowserRouter, Navigate} from "react-router-dom";
-import { QueryClient, QueryClientProvider} from '@tanstack/react-query'
-import {Helmet} from 'react-helmet';
+import { QueryClient, QueryClientProvider} from '@tanstack/react-query';
 
 function App() {
 

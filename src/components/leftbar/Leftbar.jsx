@@ -34,7 +34,7 @@ const Leftbar = () => {
             <div className="container">
                 <div className="menu">
                     <div className="user">
-                        <img src={"/uploads/" + currUser.profilePic} alt="" />
+                        <img src={ currUser.profilePic} alt="" />
                         <span>{currUser.name}</span>
                     </div>
                     <div className="item">

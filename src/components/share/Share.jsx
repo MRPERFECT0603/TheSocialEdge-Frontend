@@ -16,14 +16,15 @@ const Share = () => {
 
   const upload = async () => {
 
-    try{
+    try {
       const formData = new FormData();
-      formData.append("file" , file);
-
-      const res = await makeRequest.post("/upload" , formData);
-      return res.data;
-    }catch(err)
-    {
+      formData.append("file", file);
+      console.log([...formData.entries()]);
+      const res = await makeRequest.post("/upload", formData);
+      console.log(res.data.url);
+      return res.data.url;
+      
+    } catch (err) {
       console.log(err);
     }
   }

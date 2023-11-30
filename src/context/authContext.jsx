@@ -9,7 +9,7 @@ export const AuthContextProvider = ({ children }) => {
   );
 
   const login = async (inputs) => {
-    const res = await axios.post("http://13.49.223.232:8000/api/auth/login" , inputs , {
+    const res = await axios.post("http://13.48.5.48:8000/api/auth/login" , inputs , {
       withCredentials: true ,
     });
 

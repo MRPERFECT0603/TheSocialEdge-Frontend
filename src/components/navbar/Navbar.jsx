@@ -12,9 +12,6 @@ import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkmModeContext"
 import { AuthContext } from "../../context/authContext";
 import { notifyManager } from "@tanstack/react-query";
-import logoDarkXmas from "../../assets/logoDarkXmas.jpeg";
-import logoNormal from "../../assets/logoNormal.jpeg";
-import logoNormalDark from "../../assets/logoDarkXmas.jpeg";
 const Navbar = () => {
 
 

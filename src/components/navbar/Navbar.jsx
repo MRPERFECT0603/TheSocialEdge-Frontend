@@ -13,8 +13,8 @@ import { DarkModeContext } from "../../context/darkmModeContext"
 import { AuthContext } from "../../context/authContext";
 import { notifyManager } from "@tanstack/react-query";
 import logoDarkXmas from "../../assets/logoDarkXmas.jpeg";
-import logoNormal from "../../assets/logoNormal.png";
-import logoNormalDark from "../../assets/logoNormalDark.png";
+import logoNormal from "../../assets/logoNormal.jpeg";
+import logoNormalDark from "../../assets/logoDarkXmas.jpeg";
 const Navbar = () => {
 
 
@@ -25,8 +25,8 @@ const Navbar = () => {
         <div className="navbar">
             <div className="left">
                 <Link to="/" style={{ textDecoration: "none" }}>
-                    {/* <span>The Social Edge</span> */}
-                    <span><img src={logoDarkXmas} alt="" height="43px" width = "180px" /></span>
+                    <span>The Social Edge</span>
+                    {/* <span><img src={chrismaslogod} alt="" height="43px" width = "180px" /></span> */}
                 </Link>
                 <HomeOutlinedIcon />
                 {darkMode ? (

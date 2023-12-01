@@ -20,18 +20,10 @@
       gap: 30px;
 
       span {
-        // font-weight: bold;
-        // font-size: 20px;
-        // color: themed("logo");
-        // // color: rgb(214,0,28);
-        display: inline-block;
-        padding-top: 10px;
-        object-fit:fill;
-        width:190px;
-        .img {
-          display: block;
-          max-height: 100%;
-          max-width: 100%;
+        font-weight: bold;
+        font-size: 20px;
+        color: themed("logo");
+        // color: rgb(214,0,28);
       }
 
       .search {
@@ -58,7 +50,7 @@
         }
       }
     }
-  }
+
     .right {
       display: flex;
       align-items: center;

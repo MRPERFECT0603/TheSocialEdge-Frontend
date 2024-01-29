@@ -1,6 +1,3 @@
-Certainly! Here's the consolidated README.md file for The SocialEdge frontend:
-
-```markdown
 # The SocialEdge - Frontend
 
 ## Description

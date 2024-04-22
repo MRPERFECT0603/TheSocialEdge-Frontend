@@ -35,25 +35,5 @@ Welcome to The SocialEdge frontend repository! This project is a web-based socia
 
    The application will be available at `http://localhost:3000`.
 
-## About Us:
-### Team Members ->
 
-
-> **VIVEK SHAURYA** <p align="centre"> 
-<u>Educational Institute</u>: Jaypee Institute of Information Technology (JIIT)   
-</p>
-
-<br>
-
-> **TANYA VASHISTHA** <p align="centre"> 
-<u>Educational Institute</u>: Jaypee Institute of Information Technology (JIIT)   
-</p>
-
-<br>
-
-> **SNEHA** <p align="centre"> 
-<u>Educational Institute</u>: Jaypee Institute of Information Technology (JIIT)   
-</p>
-
-<br>
 
